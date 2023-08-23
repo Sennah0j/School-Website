@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html>
 <head>
 <meta charset="utf-8" />
-</title> Min Hemsida</title>
-
+<title>Min hemsida</title>
 </head>
 <body>
 
@@ -12,18 +10,29 @@
 <h1>Simple lol</h1>
 <h2>Damn</h2>
 <p>My first paragraph.</p>
-<img src="">
 
-<button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';">Click Here</button>
+<img id="image" src="" />
 
-<p id="demo"></p>
+
+
+
+<button type="button" onclick="show()" id="btnID">Show Image</button>
 
 <script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = Date();
-      document.
+    function show() {
+        /* Get image and change value
+        of src attribute */
+        let image = document.getElementById("image");
+        image.src = "Boss.png"
+        document.getElementById("btnID")
+            .style.display = "none";
     }
 </script>
+</script>
+
+
+
+
 
 </body>
 </html>
