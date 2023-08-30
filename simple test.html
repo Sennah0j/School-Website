@@ -7,25 +7,43 @@
 
 
 
-<h1>Simple lol</h1>
+<h1>JohannesL Test hemsida</h1>
 <h2>Damn</h2>
 <p>My first paragraph.</p>
 
-<img id="image" src="" />
-
-
-
-
 <button type="button" onclick="show()" id="btnID">Show Image</button>
+<p>
+    <img id="image" src="" />
+</p>
+
+
+
+
+
 
 <script>
+        x = 1;
+        y = 1;
+        z = 1;
     function show() {
+
         /* Get image and change value
         of src attribute */
+        if(z == 1){
         let image = document.getElementById("image");
-        image.src = "Boss.png"
-        document.getElementById("btnID")
-            .style.display = "none";
+        image.src = "Boss.png";
+   
+        z = 2;
+        }
+        else{
+        let image = document.getElementById("image");
+        image.src = "";
+        z = 1;
+        }
+
+        
+
+            
     }
 </script>
 </script>
