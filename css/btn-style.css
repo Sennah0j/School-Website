@@ -1,8 +1,20 @@
-.style{
-    color:blue;
-}
+
 h1,h2,h3,h4,h5 {
     font-family: "Arial";
+}
+
+.gulSquare{
+    color:blue;
+    background-color:rgb(255, 251, 0);
+    width:200;
+    
+}
+.gulSquare2{
+    color:blue;
+    background-color:pink;
+    width:200;
+    float:right;
+    
 }
 p {
     font-family: "Arial";
@@ -24,14 +36,32 @@ p {
     height: 30px;
 }
 
+.homeButton{
+    border-radius: 12px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 12px 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.homeNavButton{
+    border-radius: 15px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 .btn {
-    border-radius: 5px;
+    border-radius: 15px;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
     color: black;
-    padding: 14px 28px;
+    padding: 8px 18px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -60,12 +90,21 @@ color: orange;
 
 /* Grey */
 .grey {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
     border-color: #000000;
-    color: rgb(255, 255, 255);
+    color: rgb(92, 92, 92);
     }
     
 .grey:hover {
-background: rgb(111, 111, 111);
+background: rgb(132, 132, 132);
 color: rgb(0, 0, 0);
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    border-color: #000000;
+    color: rgb(98, 98, 98);
+}
+.white:hover{
+    background: rgb(176, 176, 176);
+    color: rgb(0, 0, 0);
 }
