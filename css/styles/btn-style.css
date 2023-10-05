@@ -44,6 +44,7 @@ p {
     padding: 12px 20px;
     font-size: 22px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .homeNavButton{
     border-radius: 15px;
@@ -53,6 +54,7 @@ p {
     padding: 8px 18px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 
@@ -64,6 +66,7 @@ p {
     padding: 8px 18px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 /* Oraneg */
 .orange {
@@ -96,6 +99,16 @@ color: orange;
     }
     
 .grey:hover {
+background: rgb(132, 132, 132);
+color: rgb(0, 0, 0);
+}
+.black {
+    background-color: rgb(132, 132, 132);
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    }
+    
+.black:hover {
 background: rgb(132, 132, 132);
 color: rgb(0, 0, 0);
 }

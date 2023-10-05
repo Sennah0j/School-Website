@@ -1,0 +1,21 @@
+body {
+    
+    padding: 0px; 
+    margin: 0px;
+}
+
+.header {
+    background: linear-gradient(
+        to right,
+        rgba(213, 161, 112, 0.485),
+        rgba(126, 162, 59, 0.615)),
+        url(/image/aiBild.png);
+        background-position: 0px;
+        background-size: cover;
+    background-color: white; 
+    font-family: sans-serif;
+    padding: 0px; 
+    margin-bottom: 5px;
+}
+
+
