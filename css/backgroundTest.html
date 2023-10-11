@@ -3,11 +3,46 @@
 <link rel="stylesheet" href="styles/btn-style.css"> 
 <link rel="stylesheet" type="text/css" href="styles/backgrounds.css" />
 <meta charset="utf-8" />
-<title>Inline</title>
+<title>Background uppgift</title>
 </head>
-<body class="isgud-back">
-    <h1><button class="backButton white" onclick="window.location.href ='/css/cssHomePage.html';"><-Back</button></h1>
-    
 
+   
+
+
+
+<body id="body" class="isgud-back" >
+    <header>
+        <h1><button class="backButton white" onclick="window.location.href ='/css/cssHomePage.html';"><-Back</button> 
+            <button class="backButton white" style="float: right;" onclick="fun()" >Change shape</button></h1>
+       </header>
+    
+    <header id="head" class="   ">
+
+    </header>
+
+    <script>
+        i = 1;
+        function fun(){
+            if (i == 1){
+                document.getElementById('head').className = "isgud-back-arrow";
+                document.getElementById('body').className= " ";
+                i = 2;
+            }
+            else {
+                document.getElementById('head').className = " ";
+                document.getElementById('body').className= "isgud-back";
+                i = 1;
+            }
+            
+        }
+    </script>
 </body>
+
+
+
+  
+
+
+
+
 </html>
