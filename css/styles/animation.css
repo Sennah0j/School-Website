@@ -45,6 +45,7 @@ text-transform: uppercase;
 }
 
 .heading-primary-main {
+position: relative;
 font-family: "Tangerine, sans-serif";
 display: block;
 font-size: 40px;
