@@ -24,12 +24,16 @@
         i = 1;
         function fun(){
             if (i == 1){
-                document.getElementById('head').className = "isgud-back-arrow";
+                document.getElementById('head').className = "isgud-back-triangle";
                 document.getElementById('body').className= " ";
                 i = 2;
-            }
-            else {
-                document.getElementById('head').className = " ";
+            }else if(i == 2){
+                document.getElementById('head').className = "isgud-back-arrow";
+                document.getElementById('body').className= " ";
+                i = 3;
+
+            }else if(i == 3){
+                document.getElementById('head').className = "";
                 document.getElementById('body').className= "isgud-back";
                 i = 1;
             }
