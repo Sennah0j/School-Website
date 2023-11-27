@@ -1,0 +1,21 @@
+.header-turism{
+    background-color: rgb(99, 99, 99); 
+    font-family: sans-serif; 
+}
+.header-btn{
+    background-color: rgb(99, 99, 99);
+    border: 0px solid rgb(0, 0, 0);
+    color: black;
+    padding-top: 20px; padding-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.header-btn:hover{
+    background: linear-gradient(
+        to top,
+        rgba(52, 52, 52, 0.485),
+        rgba(99, 99, 99, 0.615));
+        background-position: 0px;
+        background-size: cover;
+}
