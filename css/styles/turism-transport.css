@@ -1,0 +1,9 @@
+.text{
+    position: relative; 
+    width: 40%; 
+    height: auto; 
+    background-color: rgb(255, 255, 255); 
+    display: block ; 
+    margin-left: auto; 
+    margin-right: auto;
+}

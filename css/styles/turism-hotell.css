@@ -1,0 +1,37 @@
+.hotell-image-fortext{
+    display: block ; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 43%;
+}
+.hotell-site-text{
+    position: relative; 
+    width: 40%; 
+    height: auto; 
+    background-color: rgb(255, 255, 255); 
+    display: block ; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.hotell-images{
+    object-fit: cover; 
+    width: 100%; height: 100%; 
+    
+}
+.hotell-text-box{
+    position: absolute; 
+    background-color: rgba(22, 22, 22, 0.705); 
+    width: 100%; height: 20%; 
+    top: 80%; 
+    color: white; 
+    font-size: 20px; 
+    border-radius: 0px 0px 10px 10px; 
+    text-align: center;
+}
+.google-maps{
+    width: 40%; height:100%;
+     border:0; 
+     display: block ; 
+     margin-left: auto; 
+     margin-right: auto;
+}

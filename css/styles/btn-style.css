@@ -1,0 +1,123 @@
+
+h1,h2,h3,h4,h5 {
+    font-family: "Arial";
+}
+
+.gulSquare{
+    color:blue;
+    background-color:rgb(255, 251, 0);
+    width:200;
+    
+}
+.gulSquare2{
+    color:blue;
+    background-color:pink;
+    width:200;
+    float:right;
+    
+}
+p {
+    font-family: "Arial";
+    font-size:140%;
+    }
+
+.margin40{
+    margin-top: 40px;
+}
+.backButton{
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    
+    font-size: 12px;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+}
+
+.homeButton{
+    border-radius: 12px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 12px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.homeNavButton{
+    border-radius: 15px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+
+.btn {
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/* Oraneg */
+.orange {
+border-color: #ffa600;
+color: orange;
+}
+
+    .orange:hover {
+    background: #ffa600;
+    color: rgb(0, 0, 0);
+    }
+
+/* green */
+.green {
+    background-color: rgb(0, 0, 0);
+    border-color: #00ff04;
+    color: rgb(0, 255, 85);
+    }
+    
+    .green:hover {
+    background: #797979;
+    color: rgb(138, 252, 100);
+    }
+
+/* Grey */
+.grey {
+    background-color: rgb(211, 211, 211);
+    border-color: #000000;
+    color: rgb(92, 92, 92);
+    }
+    
+.grey:hover {
+background: rgb(132, 132, 132);
+color: rgb(0, 0, 0);
+}
+.black {
+    background-color: rgb(132, 132, 132);
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    }
+    
+.black:hover {
+background: rgb(132, 132, 132);
+color: rgb(0, 0, 0);
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    border-color: #000000;
+    color: rgb(98, 98, 98);
+}
+.white:hover{
+    background: rgb(176, 176, 176);
+    color: rgb(0, 0, 0);
+}
