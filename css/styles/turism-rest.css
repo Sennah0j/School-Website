@@ -42,3 +42,11 @@ height: 25px; /* Slider handle height */
 background: #04AA6D; /* Green background */
 cursor: pointer; /* Cursor on hover */
 }
+
+.small-box-in-box{
+    background: green; width: 30%; height: 75%; position: relative; margin-top: 27px; 
+}
+
+.small-box{
+    position: relative; background: rgba(0, 0, 0, 0); display: flex; margin: 0px; justify-content: center; width: 100%; height: 15%;
+}
