@@ -35,15 +35,12 @@ div,h1,h2,h3,h4,h5,p{
     border-radius: 5px;
 }
 .header2{
-
     background-color: rgb(99, 99, 99); 
 }
 .header-turism{
     background-color: rgb(99, 99, 99); 
-    margin-bottom: 0px;
     font-family: 'Comic Neue', cursive; 
-    display: flex;
-    justify-content: center;
+
     
 }
 .home-button{
@@ -60,14 +57,17 @@ div,h1,h2,h3,h4,h5,p{
 
 .header-btn{
     background-color: rgb(99, 99, 99);
-    border: 0px solid rgb(0, 0, 0);
+    border: none;
+    outline: none;
     color: black;
     font-family:'Comic Neue', cursive;
     padding-top: 15px; padding-bottom: 15px; padding-right: 30px;
     padding-left: 30px;
     font-size: 20px;
-    position: relative;
     cursor: pointer;
+}
+.header-div{
+    text-align: center;
     
 }
 .clicked-header-btn{
