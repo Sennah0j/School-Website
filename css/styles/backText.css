@@ -14,7 +14,7 @@ main {
         to right, 
         rgba(127, 213, 112, 0.8), 
         rgba(40, 180, 133, 0.8)) , 
-        url(/image/aiBild.png);
+        url(/p-image/aiBild.png);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     position: relative;
