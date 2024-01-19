@@ -1,0 +1,11 @@
+.navbar{
+  font-family: 'Alegreya', serif;  
+  font-size: 1.2em;
+}
+@media (max-width:1200px){
+    .navbar{
+        font-size:0em;
+        color:red;
+        
+    }
+}
