@@ -21,13 +21,14 @@ nav.navbar {
 
 /* change navbar-brand color on hover */
 .navbar a.navbar-brand:hover {
-  color: green;
+  color: rgb(128, 0, 0);
 }
 
 /*  change navbar li colors, also active one but not disabled one */
 .navbar ul.navbar-nav li.nav-item a.nav-link {
-  color: rgb(48, 168, 212);
+  color: rgb(43, 144, 184);
 }
+
 
 /* change navbar-toggler inside lines color (stroke) */
 .navbar-light span.navbar-toggler-icon {
