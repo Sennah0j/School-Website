@@ -9,7 +9,7 @@
    
 }
 .homeNavButton{
-    border-radius: 15px;
+    border-radius: 10px;
     border: 0px solid rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
     color: black;
@@ -43,14 +43,14 @@
 
 /* Grey */
 .grey {
-    background-color: rgb(211, 211, 211);
-    border-color: #000000;
-    color: rgb(92, 92, 92);
+    background-color: rgba(211, 211, 211, 0.093);
+    border-color: #00000056;
+    color: rgb(0, 0, 0);
     }
     
 .grey:hover {
-background: rgb(132, 132, 132);
-color: rgb(0, 0, 0);
+    background: rgba(184, 184, 184, 0.648);
+    color: rgb(61, 61, 61);
 }
 .black {
     background-color: rgb(0, 0, 0);
@@ -70,6 +70,25 @@ color: rgb(0, 0, 0);
 .white:hover{
     background: rgb(176, 176, 176);
     color: rgb(0, 0, 0);
+}
+.aicolor{
+    background: linear-gradient(
+        to right,
+        rgba(213, 161, 112, 0.485),
+        rgba(126, 162, 59, 0.615)),
+        url(/p-image/aiBild.png);
+        background-position: 0px;
+        background-size: cover;
+    color: white;
+}
+.aicolor:hover{
+    background: linear-gradient(
+        to right,
+        rgba(153, 128, 105, 0.485),
+        rgba(97, 112, 71, 0.615)),
+        url(/p-image/aiBild.png);
+        background-position: 0px;
+        background-size: cover;
 }
 
 
