@@ -1,12 +1,11 @@
 .navbar{
    
-    font-size: 0em;
     background: gray;
   }
 
   /* change navbar background */
   nav.navbar {
-    border-bottom: 0px solid #dedede;
+    border-bottom: 1px solid #dedede;
   }
   
   /* change navbar-brand color */
@@ -33,7 +32,7 @@
     color: rgb(255, 255, 255);
   }
   .navbar-light span.navbar-toggler-icon:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='gray' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     color: rgb(7, 7, 7);
   }
   
