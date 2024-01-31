@@ -1,41 +1,3 @@
-
-h1,h2,h3,h4,h5 {
-    font-family: "Arial";
-}
-
-.gulSquare{
-    color:blue;
-    background-color:rgb(255, 251, 0);
-    width:200;
-    
-}
-.gulSquare2{
-    color:blue;
-    background-color:pink;
-    width:200;
-    float:right;
-    
-}
-p {
-    font-family: "Arial";
-    font-size:140%;
-    }
-
-.margin40{
-    margin-top: 40px;
-}
-.backButton{
-    border-radius: 5px;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    color: black;
-    
-    font-size: 12px;
-    cursor: pointer;
-    width: 60px;
-    height: 30px;
-}
-
 .homeButton{
     border-radius: 12px;
     border: 3px solid rgb(0, 0, 0);
@@ -44,34 +6,22 @@ p {
     padding: 12px 20px;
     font-size: 22px;
     cursor: pointer;
-    margin-bottom: 10px;
+   
 }
 .homeNavButton{
     border-radius: 15px;
     border: 0px solid rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
     color: black;
-    padding: 8px 18px;
+    padding: 4px 15px;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
-
-.btn {
-    border-radius: 15px;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    color: black;
-    padding: 8px 18px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-/* Oraneg */
 .orange {
-border-color: #ffa600;
-color: orange;
+    border-color: #ffa600;
+    color: orange;
 }
 
     .orange:hover {
@@ -120,4 +70,43 @@ color: rgb(0, 0, 0);
 .white:hover{
     background: rgb(176, 176, 176);
     color: rgb(0, 0, 0);
+}
+
+
+
+@media (max-width:576px){
+    .homeNavButton{
+        font-size: 25px;
+    }
+    .homeButton{
+        font-size: 30px;
+    }
+   
+}
+@media (max-width:768px) and (min-width:576px){
+    .homeNavButton{
+        font-size: 22px;
+    }
+    .homeButton{
+        font-size: 28px;
+    }
+
+}
+@media (max-width:992px) and (min-width:768px){
+    .homeNavButton{
+        font-size: 20px;
+    }
+    .homeButton{
+        font-size: 26px;
+    }
+   
+}
+@media (max-width:1200px) and (min-width:991px){
+ 
+    .homeNavButton{
+        font-size: 18px;
+    }
+    .homeButton{
+        font-size: 24px;
+    }
 }
