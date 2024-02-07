@@ -53,14 +53,13 @@
     color: rgb(61, 61, 61);
 }
 .black {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border-color: #000000;
-    color: rgb(157, 157, 157);
+    color: rgb(255, 255, 255);
     }
     
 .black:hover {
-background: rgb(139, 139, 139);
-color: rgb(0, 0, 0);
+background: rgba(88, 88, 88, 0.625);
 }
 .white{
     background-color: rgb(255, 255, 255);
@@ -128,4 +127,8 @@ color: rgb(0, 0, 0);
     .homeButton{
         font-size: 24px;
     }
+}
+
+body{
+    background: black;
 }
