@@ -48,9 +48,17 @@ p,u{
     
   }
   
-
-  /* change navbar background on collapse */
  
+
+  
+  
+  .make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+      
+    
+  }
 
   @media (max-width:576px){
     .navbar-light span.navbar-toggler-icon {
