@@ -1,0 +1,10 @@
+.grey {
+    background-color: rgba(211, 211, 211, 0.093);
+    border-color: #00000056;
+    color: rgb(0, 0, 0);
+    }
+    
+.grey:hover {
+    background: rgba(184, 184, 184, 0.648);
+    color: rgb(61, 61, 61);
+}
