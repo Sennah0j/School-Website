@@ -1,0 +1,134 @@
+.homeButton{
+    border-radius: 12px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 12px 20px;
+    font-size: 22px;
+    cursor: pointer;
+   
+}
+.homeNavButton{
+    border-radius: 10px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 4px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.orange {
+    border-color: #ffa600;
+    color: orange;
+}
+
+    .orange:hover {
+    background: #ffa600;
+    color: rgb(0, 0, 0);
+    }
+
+/* green */
+.green {
+    background-color: rgb(0, 0, 0);
+    border-color: #00ff04;
+    color: rgb(0, 255, 85);
+    }
+    
+    .green:hover {
+    background: #797979;
+    color: rgb(138, 252, 100);
+    }
+
+/* Grey */
+.grey {
+    background-color: rgba(211, 211, 211, 0.093);
+    border-color: #00000056;
+    color: rgb(0, 0, 0);
+    }
+    
+.grey:hover {
+    background: rgba(184, 184, 184, 0.648);
+    color: rgb(61, 61, 61);
+}
+.black {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #000000;
+    color: rgb(255, 255, 255);
+    }
+    
+.black:hover {
+background: rgba(88, 88, 88, 0.625);
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    border-color: #000000;
+    color: rgb(98, 98, 98);
+}
+.white:hover{
+    background: rgb(176, 176, 176);
+    color: rgb(0, 0, 0);
+}
+.aicolor{
+    background: linear-gradient(
+        to right,
+        rgba(213, 161, 112, 0.485),
+        rgba(126, 162, 59, 0.615)),
+        url(/p-image/aiBild.png);
+        background-position: 0px;
+        background-size: cover;
+    color: white;
+}
+.aicolor:hover{
+    background: linear-gradient(
+        to right,
+        rgba(153, 128, 105, 0.485),
+        rgba(97, 112, 71, 0.615)),
+        url(/p-image/aiBild.png);
+        background-position: 0px;
+        background-size: cover;
+}
+
+
+
+@media (max-width:576px){
+    .homeNavButton{
+        font-size: 25px;
+    }
+    .homeButton{
+        font-size: 30px;
+    }
+   
+}
+@media (max-width:768px) and (min-width:576px){
+    .homeNavButton{
+        font-size: 22px;
+    }
+    .homeButton{
+        font-size: 28px;
+    }
+
+}
+@media (max-width:992px) and (min-width:768px){
+    .homeNavButton{
+        font-size: 20px;
+    }
+    .homeButton{
+        font-size: 26px;
+    }
+   
+}
+@media (max-width:1200px) and (min-width:991px){
+ 
+    .homeNavButton{
+        font-size: 18px;
+    }
+    .homeButton{
+        font-size: 24px;
+    }
+}
+
+body{
+    background: black;
+}

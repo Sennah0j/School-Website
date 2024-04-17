@@ -1,0 +1,28 @@
+.test{
+    font-size:0.7em;
+    color:green;
+}
+@media (max-width:576px){
+    .test{
+        font-size:1.5em;
+        color:red;
+    }
+}
+@media (max-width:768px) and (min-width:576px){
+    .test{
+        font-size:1.2em;
+        color:rgb(0, 0, 0);
+    }
+}
+@media (max-width:992px) and (min-width:768px){
+    .test{
+        font-size:1em;
+        color:rgb(0, 0, 0);
+    }
+}
+@media (max-width:1200px) and (min-width:991px){
+    .test{
+        font-size:0.8em;
+        color:rgb(123, 4, 110);
+    }
+}

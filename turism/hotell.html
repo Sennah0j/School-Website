@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="sv">
 <head>
 <link rel="stylesheet" href="/css/styles/btn-style.css"> 
-<link rel="stylesheet" href="/css/styles/turism.css" />
-<link rel="stylesheet" href="/css/styles/turism-hotell.css" />
+<link rel="stylesheet" href="/turism/css/turism.css" />
+<link rel="stylesheet" href="/turism/css/turism-hotell.css" />
 
 <meta charset="utf-8" />
-<title>Turism</title>
+<title>Hotell</title>
 <style>
+    
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -23,13 +24,14 @@
 </head>
 
 <body>
+    <!--Top baren-->
 <header class="header2">
     
     <button style="margin: 15px 0px 0px 10px;" class="home-button" style="display: inline-block;" onclick="window.location.href ='/turism/index.html';"> LOGO </button> 
     
-    <div  class="header-turism" style="text-align: center;">
+    <div  class="header-turism" style="">
 
-        <div class="header-div"  style="display: inline-block;">
+        <div class="header-div"  style="">
             <button class="header-btn" onclick="window.location.href = '/turism/resturanger.html';"> Resturanger</button>
             <button class="header-btn" onclick="window.location.href = '/turism/sevärdigheter.html'; "> Sevärdigheter</button>
             <button class="header-btn" onclick="window.location.href ='/turism/transport.html';"> Kollektivtrafik</button>
@@ -44,25 +46,29 @@
 </header>
 
 <main>
-    <div id="hotell" style="position: absolute; display: block ; margin-left: auto; margin-right: auto; width: 100%;"><p style="text-align: center; font-size: 35px;"> Populära hotell just nu</p></div>
-    <div style="position: relative; margin-bottom: 0px;font-family: 'Comic Neue', cursive; padding-top: 5%;">
-        <a href="#savoy"><div style="position: absolute; width: 15%; height: 300%; background-color: black; left: 23%;">
-            <img class="hotell-images" src="/image/hotell1.PNG" alt="Bild på hotell">
+    <!--Dem mest populära grejerna-->
+    <h1 style="text-align: center; font-size: 35px;"> Populära hotell just nu</h1>
+    <div style="position: relative; top: 10%; width: 100%;  height: 50%;">
+
+        <a href="#savoy"><div style="position: absolute; width: 15%; height: 100%; background-color: black; left: 23%;">
+            <img class="hotell-images" src="/turism/image/hotell1.PNG" alt="Bild på hotell">
             <div class="hotell-text-box">Savoy Hotel</div>
         </div> </a>
-        <a href="#kimpton"><div style="position: absolute; width: 15%; height: 300%; background-color: rgb(255, 0, 0);  left: 43%;">
-            <img class="hotell-images" src="/image/hotell2.jpg" alt="Bild på hotell2">
+        <a href="#kimpton"><div style="position: absolute; width: 15%; height: 100%; background-color: rgb(255, 0, 0);  left: 43%;">
+            <img class="hotell-images" src="/turism/image/hotell2.jpg" alt="Bild på hotell2">
             <div class="hotell-text-box">Kimpton Fitzroy London Hotel</div>
         </div></a>
-        <a href="#pancras"><div style="position: absolute; width: 15%; height: 300%; background-color: rgb(157, 255, 0);  left: 63%;">
-            <img class="hotell-images" src="/image/hotell3.jpg" alt="Bild på hotell 3">
+        <a href="#pancras"><div style="position: absolute; width: 15%; height: 100%; background-color: rgb(157, 255, 0);  left: 63%;">
+            <img class="hotell-images" src="/turism/image/hotell3.jpg" alt="Bild på hotell 3">
             <div class="hotell-text-box"> St. Pancras Renaissance London Hotel</div>
         </div> </a>
     </div>
 
-    <div style="padding-top: 20%;" >
+
+    <!--Dem olika hotellen med texter-->
+    <div style="padding-top: 10%;" >
         <h1 id="savoy" style="text-align: center;"> Savoy Hotel</h1>
-        <img src="/image/hotell1.PNG" alt="London savoy hotel" class="hotell-image-fortext">
+        <img src="/turism/image/hotell1.PNG" alt="London savoy hotel" class="hotell-image-fortext">
         <div class="hotell-site-text"> 
           <p style="font-size: 18px;">Savoy Hotel i London är en ikonisk och historisk lyxhotell som har varit en framstående del av stadens hotellscen sedan det öppnades 1889. Hotellet är strategiskt beläget vid Themsen bredvid Covent Garden och är känt för sin elegans och förstklassiga service.</p>
           <p style="font-size: 18px;">Savoy har välkomnat ett imponerande klientel genom åren, inklusive kändisar, politiker och medlemmar av kungligheter. Hotellet har genomgått flera renoveringar för att behålla sin tidlösa charm och modernisera sina faciliteter.</p>
@@ -73,7 +79,7 @@
 
     <div style="padding-top: 10%;" >
         <h1 id="kimpton" style="text-align: center;"> Kimpton Fitzroy London Hotel</h1>
-        <img src="/image/hotell2.jpg" alt="Kimpton Fitzroy London Hotel" class="hotell-image-fortext">
+        <img src="/turism/image/hotell2.jpg" alt="Kimpton Fitzroy London Hotel" class="hotell-image-fortext">
         <p style="font-size: 10px; text-align: center;">By Robin Sones, <a href="https://www.geograph.org.uk/photo/399098">Link to picture</a></p>
         <div class="hotell-site-text"> 
             <p style="font-size: 18px;">Kimpton Fitzroy London Hotel är ett exklusivt och elegant hotell beläget i Londons livliga område Bloomsbury. Hotellet kombinerar historisk charm med modern lyx och är en del av Kimpton Hotels & Restaurants-kedjan känd för sina unika och stilfulla egenskaper.</p>
@@ -85,7 +91,7 @@
 
     <div style="padding-top: 10%;" >
         <h1 id="pancras" style="text-align: center;"> St.Pancras Renaissance London Hotel</h1>
-        <img src="/image/hotell3.jpg" alt="St.Pancras Renaissance London Hotel" class="hotell-image-fortext">
+        <img src="/turism/image/hotell3.jpg" alt="St.Pancras Renaissance London Hotel" class="hotell-image-fortext">
         <div class="hotell-site-text"> 
             <p style="font-size: 18px;">St. Pancras Renaissance London Hotel är en historisk pärla och ett av Londons mest ikoniska hotell. Det är beläget i den imponerande St. Pancras International Station, en viktig transportknutpunkt och ett mästerverk i viktoriansk arkitektur. Hotellet återinvigdes 2011 efter omfattande restaurering och är nu en lyxig oas i hjärtat av staden.</p>
             <p style="font-size: 18px;">Byggnaden, ursprungligen öppnad 1873 som Midland Grand Hotel, är känd för sin imponerande gotiska arkitektur och grandiosa interiör. Hotellet är en del av det storslagna St. Pancras station och har bevarat många av sina ursprungliga detaljer, inklusive den spektakulära Grand Staircase och den imponerande lobbyn.</p>
@@ -96,7 +102,7 @@
 
     <div style="padding-top: 10%;" >
         <h1 id="ermin" style="text-align: center;"> St.Ermin's Hotel </h1>
-        <img src="/image/St_Ermin's_Hotel,_London.jpg" alt="St.Ermin's Hotel" class="hotell-image-fortext">
+        <img src="/turism/image/St_Ermin's_Hotel,_London.jpg" alt="St.Ermin's Hotel" class="hotell-image-fortext">
         <div class="hotell-site-text"> 
             <p style="font-size: 18px;">St Ermin's Hotel är ett exklusivt hotell beläget i hjärtat av Westminster, London. Hotellet har en fascinerande historia och har varit en del av stadens landskap sedan det byggdes på 1800-talet. St Ermin's Hotel är känt för sin eleganta atmosfär och sin unika arkitektur.</p>
             <p style="font-size: 18px;">Byggnaden har en distinkt viktoriansk stil och har genomgått omfattande renoveringar för att bevara sin historiska charm samtidigt som den erbjuder moderna bekvämligheter. Det är känt för sina eleganta möbler, storslagna trappor och vackra detaljer som ger hotellet en förtrollande atmosfär.</p>
@@ -105,17 +111,18 @@
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.9388091553169!2d-0.1344274489290727!3d51.4993589618474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604dea89719fd%3A0xfaa58fd6db10a0cc!2sSt.%20Ermin&#39;s%20Hotel%2C%20Autograph%20Collection!5e0!3m2!1ssv!2sse!4v1702244081203!5m2!1ssv!2sse" class="google-maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    <!--Botten footer med min info-->
 <br>
-    <footer style=" position: absolute; height: 30%; width: 100%; background: gray;">
-        <div style="position: relative;">
-            <div style="position: absolute; padding-top: 3%; right: 2%;">
-                <p style="font-size: 20px;">Email: <a style="color: rgb(202, 188, 109);" href="mailto:21joli@stockholmscience.se">21joli@stockholmscience.se</a></p>
-                <p style=" font-size: 17px;">Gjord av Johannes Lindblom</p>
-            </div>
-        </div>
-    </footer>
-</main>
 
+</main>
+<footer style=" position: absolute; height: 30%; width: 100%; background: rgb(164, 164, 164);">
+    <div style="position: relative;">
+        <div style="position: absolute; padding-top: 3%; right: 2%;">
+            <p style="font-size: 20px; color: black;">Email: <a style="color: rgb(25, 251, 0);" href="mailto:21joli@stockholmscience.se">21joli@stockholmscience.se</a></p>
+            <p style=" font-size: 17px; color: black;">Gjord av Johannes Lindblom</p>
+        </div>
+    </div>
+</footer>
 
 
 </body>

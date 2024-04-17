@@ -5,7 +5,7 @@
         to right,
         rgba(213, 161, 112, 0.485),
         rgba(126, 162, 59, 0.615)),
-        url(/image/aiBild.png);
+        url(/p-image/aiBild.png);
         background-size: cover;
         
 }
@@ -15,7 +15,7 @@
         to right,
         rgba(213, 161, 112, 0.485),
         rgba(126, 162, 59, 0.615)),
-        url(/image/aiBild.png);
+        url(/p-image/aiBild.png);
         background-size: cover;
         clip-path: polygon(0 25%, 60% 25%, 60% 0, 100% 50%, 60% 97%, 60% 72%, 0 73%);     
 }
@@ -25,7 +25,7 @@
         to right,
         rgba(213, 161, 112, 0.485),
         rgba(126, 162, 59, 0.615)),
-        url(/image/aiBild.png);
+        url(/p-image/aiBild.png);
         background-size: cover;
         clip-path: polygon(50% 4%, 0 90%, 100% 89%);     
 }
@@ -47,7 +47,7 @@ main {
             to right, 
             rgba(127, 213, 112, 0.8), 
             rgba(40, 180, 133, 0.8)) , 
-            url(/image/aiBild.png);
+            url(/p-image/aiBild.png);
         background-size: cover;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         position: relative;

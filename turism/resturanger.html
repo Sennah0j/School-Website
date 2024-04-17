@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="sv">
 <head>
 <link rel="stylesheet" href="/css/styles/btn-style.css"> 
-<link rel="stylesheet" href="/css/styles/turism.css" />
+<link rel="stylesheet" href="/turism/css/turism.css" />
+<link rel="stylesheet" href="/turism/css/turism-rest.css" />
 
 <meta charset="utf-8" />
-<title>Turism</title>
+<title>Resturanger</title>
 <style>
+ 
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -22,13 +24,14 @@
 </head>
 
 <body>
+  <!--Top navbaren-->
 <header class="header2">
     
     <button style="margin: 15px 0px 0px 10px;" class="home-button" style="display: inline-block;" onclick="window.location.href ='/turism/index.html';"> LOGO </button> 
     
-    <div  class="header-turism" style="text-align: center;">
+    <div  class="header-turism" style="">
 
-        <div class="header-div"  style="display: inline-block;">
+        <div class="header-div"  style="">
             <button class="clicked-header-btn" onclick="window.location.href = '/turism/resturanger.html';"> Resturanger</button>
             <button class="header-btn" onclick="window.location.href = '/turism/sevärdigheter.html'; "> Sevärdigheter</button>
             <button class="header-btn" onclick="window.location.href ='/turism/transport.html';"> Kollektivtrafik</button>
@@ -45,19 +48,92 @@
 <main>
 
 
-  
-  <footer style=" position: absolute; height: 30%; width: 100%; background: gray; top: 410%;">
-    <div style="position: relative;">
-        <div style="position: absolute; padding-top: 3%; right: 2%;">
-            <p style="font-size: 20px;">Email: <a style="color: rgb(202, 188, 109);" href="mailto:21joli@stockholmscience.se">21joli@stockholmscience.se</a></p>
-            <p style=" font-size: 17px;">Gjord av Johannes Lindblom</p>
-        </div>
+  <div style="position: relative; left: 45%; top: 10%;  width: 800px; height: 1500px; background: #E9BBBB; ">  
+    <div style="">
+
+      <div class="small-box" style=" ">
+        <div class="small-box-in-box"></div>
+        <div class="small-box-in-box" style=" margin-left: 20px;"></div>
+        <div class="small-box-in-box " style="  margin-left: 20px;"></div>
+      </div>
+
+      <div class="small-box" style=" ">
+        <div class="small-box-in-box"></div>
+        <div class="small-box-in-box" style=" margin-left: 20px;"></div>
+        <div class="small-box-in-box " style="  margin-left: 20px;"></div>
+      </div>
+      <div class="small-box" style=" ">
+        <div class="small-box-in-box"></div>
+        <div class="small-box-in-box" style=" margin-left: 20px;"></div>
+        <div class="small-box-in-box " style="  margin-left: 20px;"></div>
+      </div>
+      <div class="small-box" style=" ">
+        <div class="small-box-in-box"></div>
+        <div class="small-box-in-box" style=" margin-left: 20px;"></div>
+        <div class="small-box-in-box " style="  margin-left: 20px;"></div>
+      </div>
+      <div class="small-box" style=" ">
+        <div class="small-box-in-box"></div>
+        <div class="small-box-in-box" style=" margin-left: 20px;"></div>
+        <div class="small-box-in-box " style="  margin-left: 20px;"></div>
+      </div>
+      <div class="small-box" style=" ">
+        <div class="small-box-in-box"></div>
+        <div class="small-box-in-box" style=" margin-left: 20px;"></div>
+        <div class="small-box-in-box " style="  margin-left: 20px;"></div>
+      </div>
     </div>
+
+  </div>
+
+  <div style="position: absolute; background: rgb(146, 146, 146); width: 24%; height: 25%; position: absolute; left: 8%; top: 10%; margin: auto; padding: 20px;">
+    <img src="/turism/image/map-rec.png" style=" position: relative; object-fit: cover; width: 100%; height: 100%;"  >
+    <div style="position: absolute; left: 0; right: 0; top: 40%;  margin-left: auto; margin-right: auto; width: 150px; /* Need a specific value to work */"><img src="/turism/image/vissa-karta.png" style="" ></div>
+    
+  </div>
   
-</footer>
+  <div style="position: absolute; width: 20%; height: 30%; background: rgb(146, 146, 146); left: 8%; top: 45%; text-align: center;">
+    <div class="check-pos" style="top: 5%;"><input type="checkbox" style="transform: scale(2);">
+    <label style="font-size: 20px;"> Option 1</label></div><br>
+
+    <div class="check-pos" style="top: 20%;"><input type="checkbox" style="transform: scale(2);">
+    <label style="font-size: 20px;"> Option 2</label></div><br>
+
+    <div class="check-pos" style="top: 35%;"><input type="checkbox" style="transform: scale(2);">
+    <label style="font-size: 20px;"> Option 3</label></div><br>
+
+    <div style="top: 65%; left: 15%; position: absolute; width: 70%;">
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p style="font-size: 17px;">Value: <span id="demo"></span></p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
+
 </main>
-
-
+ <!--Botten footer med min info-->
+ <br>
+ <footer style=" position: absolute; height: 30%; width: 100%; background: rgb(164, 164, 164);">
+  <div style="position: relative;">
+      <div style="position: absolute; padding-top: 3%; right: 2%;">
+          <p style="font-size: 20px; color: black;">Email: <a style="color: rgb(25, 251, 0);" href="mailto:21joli@stockholmscience.se">21joli@stockholmscience.se</a></p>
+          <p style=" font-size: 17px; color: black;">Gjord av Johannes Lindblom</p>
+      </div>
+  </div>
+</footer>
 
 </body>
 
