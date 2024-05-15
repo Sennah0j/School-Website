@@ -2,14 +2,20 @@
 <html lang="sv">
  <head>
    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1.0, shrink-to-fit=no" >
-    <title>Task 3</title>
+    <title>Yatzy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="/js/css/task3.css"> 
  </head>
 
  <body>
     <main>
-        <div>
-            <button id="throwDice">Throw Dice</button>
+        <div class="">
+            <div class="">
+                <div class=""><button id="throwDice">Throw Dice</button></div>
+                <div class=""><p id="counter">3</p></div>
+            </div>
         </div>
 
        <div> 
@@ -19,7 +25,48 @@
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-4"><p class="roboto-bold">HOLD</p>  </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-5"><p class="roboto-bold">HOLD</p></div>
         </div>
-        <div></div>
+        <div style="margin-top: 20px;">
+            <div>
+            <table style="width: 30%; margin-left: auto; margin-right: auto;">
+                <tr>
+                  <th></th>
+                  <th>Player 1</th>
+                  <th>Player 2</th>
+                </tr>
+                <tr>
+                  <td>Ones</td>
+                  <td><button id="ones point">5</button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Twos</td>
+                  <td><button id="twos point">5</button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Threes</td>
+                  <td><button id="threes point">5</button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Fours</td>
+                  <td><button id="fours point">5</button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Fives</td>
+                  <td><button id="fives point">5</button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Sixes</td>
+                  <td><button id="sixes point">5</button></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+        </div>
+        <div id="test"></div>
     </main>
 
   
