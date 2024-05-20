@@ -28,16 +28,22 @@ document.getElementById('throwDice').addEventListener('click',function(){
             console.log(i);
             
         }
-    document.getElementById('ones').innerHTML = checkOne();
+    document.getElementById('ones').innerHTML = checkNumbs(1);
+    document.getElementById('twos').innerHTML = checkNumbs(2);
+    document.getElementById('threes').innerHTML = checkNumbs(3);
+    document.getElementById('fours').innerHTML = checkNumbs(4);
+    document.getElementById('fives').innerHTML = checkNumbs(5);
+    document.getElementById('sixes').innerHTML = checkNumbs(6);
+    
 
         
 });
 
-function checkOne(){
+function checkNumbs(int){
     var temp3 = 0;  
     for (let i = 0; i < dices.length; i++){
-        if (dices[i] == 1){
-            temp3++;
+        if (dices[i] == int){
+            temp3 = temp3 + 1 * int;
         }
     }
     console.log(temp3);
