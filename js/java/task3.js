@@ -28,9 +28,27 @@ document.getElementById('throwDice').addEventListener('click',function(){
             console.log(i);
             
         }
-    
+    document.getElementById('ones').innerHTML = checkOne();
 
+        
 });
+
+function checkOne(){
+    var temp3 = 0;  
+    for (let i = 0; i < dices.length; i++){
+        if (dices[i] == 1){
+            temp3++;
+        }
+    }
+    console.log(temp3);
+    return (temp3);
+}
+
+document.getElementById('ones').addEventListener('click', function(){
+    document.getElementById('ones').style.background = '#eb4034';
+});
+
+
 document.querySelector('#point').addEventListener('click', function(){
     
 
