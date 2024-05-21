@@ -9,7 +9,7 @@
     display: inline-block;
 }
 th,td{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
