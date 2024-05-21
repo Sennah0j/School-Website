@@ -21,9 +21,22 @@ p{
     font-weight: 700;
     font-style: normal;
   }
-.play1ScoreButtons{}
-
-.play2ScoreButtons{}
+.play1ScoreButtons{
+    background-color: transparent;
+    border: none;
+}
+.play1ScoreButtons:hover{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+}
+.play2ScoreButtons{
+    background-color: transparent;
+    border: none;
+}
+.play2ScoreButtons:hover{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+}
 
 div{
     text-align: center;

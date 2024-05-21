@@ -6,29 +6,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="/yatzy/css/task3.css"> 
+    <link rel="stylesheet" href="/yatzy/css/yatzy.css"> 
  </head>
 
- <body>
+ <body style="background-color: rgb(189, 189, 189);">
     <main>
       <h1 style="text-align: center;" id="playerTurnText">Player's turn</h1>
-        <div class="">
-            <div class="">
-                <div class=""><button id="throwDice">Throw Dice</button></div>
-                <div class=""><p id="counter">3</p></div>
-            </div>
-        </div>
+        
 
-       <div> 
+       <div style="background-color: green; border-radius: 100px; margin-left: 30%; margin-right: 30%; border: 10px solid;"> 
+        <div style="margin-top: 50px; margin-bottom: 50px;">
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-1"> <br> <input class="largerCheckBox" type="checkbox" id="check-1"><p class="roboto-bold">HOLD</p> </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-2"> <br> <input class="largerCheckBox" type="checkbox" id="check-2"><p class="roboto-bold">HOLD</p>  </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-3"> <br> <input class="largerCheckBox" type="checkbox" id="check-3"><p class="roboto-bold">HOLD</p>  </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-4"><p class="roboto-bold">HOLD</p>  </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-5"><p class="roboto-bold">HOLD</p></div>
+          </div>
         </div>
+
+        <div style="margin-top: 10px;">
+          <div class="">
+              <div class=""><button id="throwDice">Throw Dice</button></div>
+              <div class=""><p id="counter">3</p></div>
+          </div>
+        </div>
+
         <div style="margin-top: 20px;">
             <div>
-            <table style="width: 30%; margin-left: auto; margin-right: auto;">
+            <table style="width: 30%; margin-left: auto; margin-right: auto; background-color: white;">
                 <tr>
                   <th></th>
                   <th>Player 1</th>
@@ -65,7 +70,7 @@
                   <td><button class="play2ScoreButtons" id="sixes2">0</button></td>
                 </tr>
                 <tr style="border: 2px solid;">
-                  <td>Sum</td>
+                  <td style="color: green;">Sum</td>
                   <td><p id="sum">0</p></td>
                   <td><p id="sum2">0</p></td>
                 </tr>
@@ -110,7 +115,7 @@
                   <td><button class="play2ScoreButtons" id="yhatzee2">0</button></td>
                 </tr>
                 <tr style="border: 3px solid;">
-                  <td>Total</td>
+                  <td style="color: red;">Total</td>
                   <td><p id="total">0</p></td>
                   <td><p id="total2">0</p></td>
                 </tr> 
@@ -123,5 +128,5 @@
 
   
  </body>
- <script src="/yatzy/java/task3.js"></script>
+ <script src="/yatzy/js/JSforYatzy.js"></script>
 </html> 
