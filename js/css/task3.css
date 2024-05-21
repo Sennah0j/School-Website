@@ -21,9 +21,10 @@ p{
     font-weight: 700;
     font-style: normal;
   }
-#point{
+.play1ScoreButtons{}
 
-  }
+.play2ScoreButtons{}
+
 div{
     text-align: center;
 }
