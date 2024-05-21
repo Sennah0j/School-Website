@@ -1,13 +1,13 @@
 document.getElementById('check-1');
 var turnsLeft = '3';
-const dices = [0, 0, 0, 0, 0];
-const play1 = [0,0,0,0,0,0];
-const play1Check = [false, false , false, false, false, false];
-const play2 = [0,0,0,0,0,0];
-const play2Check = [false, false , false, false, false, false];
+const dices = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const play1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const play1Check = [false, false , false, false, false, false, false, false , false, false, false, false, false];
+const play2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const play2Check = [false, false , false, false, false, false, false, false , false, false, false, false, false];
 
-const tempPlay1 = [0, 0, 0, 0, 0, 0];
-const tempPlay2 = [0, 0, 0, 0, 0, 0];
+const tempPlay1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const tempPlay2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var turn = 'player1';
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
         for(let i = 0; i < checkList.length; i++){
             checkList[i].disabled = true;
         }
+        document.getElementById('playerTurnText').innerHTML = turn + "'s turn";
 });
 
 document.getElementById('throwDice').addEventListener('click',function(){
@@ -66,12 +67,14 @@ document.getElementById('twos').addEventListener('click', function(){saveNumbers
 document.getElementById('threes').addEventListener('click', function(){saveNumbers(this.innerHTML, 3)});
 document.getElementById('fours').addEventListener('click', function(){saveNumbers(this.innerHTML, 4)});
 document.getElementById('fives').addEventListener('click', function(){saveNumbers(this.innerHTML, 5)});
+document.getElementById('sixes').addEventListener('click', function(){saveNumbers(this.innerHTML, 6)});
 
 document.getElementById('ones2').addEventListener('click', function(){saveNumbers(this.innerHTML, 1)});
 document.getElementById('twos2').addEventListener('click', function(){saveNumbers(this.innerHTML, 2)});
 document.getElementById('threes2').addEventListener('click', function(){saveNumbers(this.innerHTML, 3)});
 document.getElementById('fours2').addEventListener('click', function(){saveNumbers(this.innerHTML, 4)});
 document.getElementById('fives2').addEventListener('click', function(){saveNumbers(this.innerHTML, 5)});
+document.getElementById('sixes2').addEventListener('click', function(){saveNumbers(this.innerHTML, 6)});
 
 function checkNumbs(){
    if(turn == 'player1'){
@@ -106,7 +109,7 @@ function checkNumbs(){
 }
 
 function saveNumbers(string, i){
-  
+    
     if(turn == 'player1'){
         play1[i-1] = string;
         play1Check[i-1] = true;
@@ -167,7 +170,8 @@ function saveNumbers(string, i){
         checkList[i].disabled = true;
         checkList[i].checked = false;
     }
-  
+    document.getElementById('playerTurnText').innerHTML = turn + "'s turn";
+
 }
 
 function bruh4(){
