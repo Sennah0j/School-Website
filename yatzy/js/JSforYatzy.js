@@ -77,7 +77,7 @@ document.getElementById('throwDice').addEventListener('click',function(){
             console.log('bruh 5 '+tempPlay2);
         }
 
-
+        finish();
         console.log('----------------');
                 
 });
@@ -113,6 +113,35 @@ document.getElementById('smallStraight2').addEventListener('click', function(){s
 document.getElementById('largeStraight2').addEventListener('click', function(){saveNumbers(this.innerHTML, 13)});
 document.getElementById('chance2').addEventListener('click', function(){saveNumbers(this.innerHTML, 14)});
 document.getElementById('yhatzee2').addEventListener('click', function(){saveNumbers(this.innerHTML, 15)});
+
+function finish(){
+    let temp25 = 0;
+    for(let i = 0; i < play2Check.length; i++){
+        if(play2Check[i] == true){
+            temp25++;
+        }
+        else{
+            break;
+        }
+    }
+    if(temp25 == play2Check.length){
+        if(document.getElementById('total').innerHTML > document.getElementById('total2').innerHTML){
+            document.getElementById('test').innerHTML = ('play1 won');
+        }
+        else{
+            document.getElementById('test').innerHTML = ('play2 won');
+        }
+        turnsLeft =0;
+        disableThrow();
+       
+    }
+    else if(document.getElementById('total').innerHTML == document.getElementById('total2').innerHTML){
+        document.getElementById('test').innerHTML = ('It is a tie');
+    }
+    else{
+        document.getElementById('test').innerHTML = ('');
+    }
+}
 
 function sumUpEverything(){
     let firstSum = 0;
@@ -435,6 +464,7 @@ function saveNumbers(string, i){
     }
     document.getElementById('playerTurnText').innerHTML = turn + "'s turn";
     sumUpEverything();
+    finish();
 
 }
 
