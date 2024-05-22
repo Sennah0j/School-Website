@@ -162,10 +162,13 @@ function pairs(){
         }
         console.log(itemCounter(sortedDices, i) + ' one pairs checking' +i);
     }
-    for(temp20 - 1; temp20 > 0; temp20--){
+    for(temp20 > 0; temp20--;){
         if(itemCounter(sortedDices, temp20) >= 2){
+            console.log('testubg ' + itemCounter(sortedDices, temp20) + ' ' + temp20);
             twoPair = onePair +(temp20 * 2);
+            break;
         }
+       
     }
     if(turn == 'player1' && (play1Check[6] == false)){
         tempPlay1[6] = onePair;
