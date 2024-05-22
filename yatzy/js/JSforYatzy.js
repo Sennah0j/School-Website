@@ -1,6 +1,6 @@
 document.getElementById('check-1');
 var turnsLeft = '3';
-const dices = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const dices = [1, 1, 1, 1, 1];
 const play1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const play1Check = [false, false , false, false, false, false, false, false , false, false, false, false, false];
 const play2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -31,6 +31,7 @@ document.getElementById('throwDice').addEventListener('click',function(){
     turnsLeft--;
     disableThrow();
         var num = 1;
+        
         const nodeList = document.querySelectorAll(".dice");
         for (let i = 0; i < nodeList.length; i++) {
             
@@ -47,19 +48,17 @@ document.getElementById('throwDice').addEventListener('click',function(){
             console.log(i);
             
         }
+        
         checkNumbs();
+        chanceCalculate();
+        yatzy();
         if(turn == 'player1'){
             bruh4();
         }
         else{
             bruh5();
         }
-        
-        
-    
-    
-
-        
+                
 });
 
 document.getElementById('ones').addEventListener('click', function(){saveNumbers(this.innerHTML, 1)});
@@ -68,6 +67,7 @@ document.getElementById('threes').addEventListener('click', function(){saveNumbe
 document.getElementById('fours').addEventListener('click', function(){saveNumbers(this.innerHTML, 4)});
 document.getElementById('fives').addEventListener('click', function(){saveNumbers(this.innerHTML, 5)});
 document.getElementById('sixes').addEventListener('click', function(){saveNumbers(this.innerHTML, 6)});
+document.getElementById('yhatzee').addEventListener('click', function(){saveNumbers(this.innerHTML, 13)});
 
 document.getElementById('ones2').addEventListener('click', function(){saveNumbers(this.innerHTML, 1)});
 document.getElementById('twos2').addEventListener('click', function(){saveNumbers(this.innerHTML, 2)});
@@ -75,6 +75,49 @@ document.getElementById('threes2').addEventListener('click', function(){saveNumb
 document.getElementById('fours2').addEventListener('click', function(){saveNumbers(this.innerHTML, 4)});
 document.getElementById('fives2').addEventListener('click', function(){saveNumbers(this.innerHTML, 5)});
 document.getElementById('sixes2').addEventListener('click', function(){saveNumbers(this.innerHTML, 6)});
+document.getElementById('yhatzee2').addEventListener('click', function(){saveNumbers(this.innerHTML, 13)});
+
+function yatzy(){
+    const allEqual = arr => arr.every(v => v === arr[0]);
+    
+    if(allEqual(dices)== true){
+        if(turn == 'player1'){
+            play1[13] = 50;
+            play1Check[13] = true;
+            tempPlay1[13] = 50;
+        }
+        else{
+            play2[13] = 50;
+            play2Check[13] = true;
+            tempPlay2[13] = 50;
+        }
+    }
+    else{
+        tempPlay1[13] = 0;
+        tempPlay2[13] = 0;
+    }
+    console.log(allEqual(dices)+" yazty check")
+}
+
+function chanceCalculate(){
+    let temp5 = 0;
+    if(turn == 'player1'){
+        for(let i = 0; i < dices.length; i++){
+            temp5 += parseFloat(dices[i]); 
+        }
+        console.log("temp5 "+ temp5 );
+            tempPlay1[12] = temp5;
+    }
+}
+
+function ofAKind(){
+    if(turn == 'player1'){
+
+    }
+    else{
+        
+    }
+}
 
 function checkNumbs(){
    if(turn == 'player1'){
@@ -181,6 +224,8 @@ function bruh4(){
     document.getElementById('fours').innerHTML = tempPlay1[3];
     document.getElementById('fives').innerHTML = tempPlay1[4];
     document.getElementById('sixes').innerHTML = tempPlay1[5];
+    document.getElementById('chance').innerHTML = tempPlay1[12];
+    document.getElementById('yhatzee').innerHTML = tempPlay1[13];
 
 
 }
@@ -193,6 +238,8 @@ function bruh5(){
         document.getElementById('fours2').innerHTML = tempPlay2[3];
         document.getElementById('fives2').innerHTML = tempPlay2[4];
         document.getElementById('sixes2').innerHTML = tempPlay2[5];
+        document.getElementById('chance2').innerHTML = tempPlay1[12];
+        document.getElementById('yhatzee2').innerHTML = tempPlay2[13];
     
 }
 
