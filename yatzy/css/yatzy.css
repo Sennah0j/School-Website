@@ -1,10 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.dice {
-    height: 100px;
-    border-style: solid;
-    border-radius: 20px;
-    margin:20px 20px 10px 20px ;
+@media (max-width:576px){
+    .dice {
+        height: 70px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 70%;
+        float: right; 
+        
+    }
+    #pointsDiv{
+        
+        visibility: hidden;
+    }
+    input.largerCheckBox{
+        transform: scale(1.2);
+        margin: auto;
+    }
+   
+    
+   
 }
+@media (max-width:768px) and (min-width:576px){
+
+    .dice {
+        height: 80px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 60%;
+        float: right; 
+      
+    }
+    #pointsDiv{
+        
+        visibility: hidden;
+    }
+    input.largerCheckBox{
+        transform: scale(1.5);
+        margin: auto;
+    }
+    
+}
+@media (max-width:992px) and (min-width:768px){
+
+    .dice {
+        height: 90px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 70%;
+    }
+    input.largerCheckBox{
+        transform: scale(2);
+        margin: auto;
+    }
+    #pointsDiv{
+        
+        visibility: visible;
+    }
+    .table-button{
+        float: right; 
+        height: auto; 
+        display: none;
+    }
+}
+@media (min-width:991px){
+    .dice {
+        height: 100px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    input.largerCheckBox{
+        transform: scale(2);
+        margin: auto;
+    }
+    #pointsDiv{
+    
+        visibility: visible;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .table-button{
+        float: right; 
+        height: auto; 
+        display: none;
+    }
+}
+
+
 .diceDiv{
     display: inline-block;
 }
@@ -41,10 +137,7 @@ p{
 div{
     text-align: center;
 }
-input.largerCheckBox{
-    transform: scale(2);
-    margin: auto;
-}
+
 #throwDice {
     background-color: rgb(222, 128, 5);
     border-radius: 6px;

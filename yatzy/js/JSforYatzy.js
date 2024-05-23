@@ -1,4 +1,7 @@
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js";
+src
 document.getElementById('check-1');
+var trueFalseVisibilty = false;
 var turnsLeft = '3';
 const dices = [2, 2, 2, 4, 4];
 var sortedDices = [];
@@ -82,6 +85,8 @@ document.getElementById('throwDice').addEventListener('click',function(){
                 
 });
 
+document.getElementById('tableButton').addEventListener('click', function(){showTable()});
+
 document.getElementById('ones').addEventListener('click', function(){saveNumbers(this.innerHTML, 1)});
 document.getElementById('twos').addEventListener('click', function(){saveNumbers(this.innerHTML, 2)});
 document.getElementById('threes').addEventListener('click', function(){saveNumbers(this.innerHTML, 3)});
@@ -113,6 +118,23 @@ document.getElementById('smallStraight2').addEventListener('click', function(){s
 document.getElementById('largeStraight2').addEventListener('click', function(){saveNumbers(this.innerHTML, 13)});
 document.getElementById('chance2').addEventListener('click', function(){saveNumbers(this.innerHTML, 14)});
 document.getElementById('yhatzee2').addEventListener('click', function(){saveNumbers(this.innerHTML, 15)});
+
+
+function showTable(){
+
+    if(trueFalseVisibilty == false){
+        document.getElementById('pointsDiv').style.visibility = 'visible';
+        document.getElementById('pointsDiv').style.display = 'block';
+        trueFalseVisibilty = true;
+    }
+    else{
+        document.getElementById('pointsDiv').style.visibility = 'hidden';
+        document.getElementById('pointsDiv').style.display = 'none';
+        trueFalseVisibilty = false;
+    }
+    console.log('talbe trying to show');
+
+}
 
 function finish(){
     let temp25 = 0;

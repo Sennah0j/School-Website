@@ -11,10 +11,14 @@
 
  <body style="background-color: rgb(189, 189, 189);">
     <main>
+      <button id="tableButton" class="table-button" >Points table</button>
       <h1 style="text-align: center;" id="playerTurnText">Player's turn</h1>
-        
-
-       <div style="background-color: green; border-radius: 100px; margin-left: 20%; margin-right: 20%; border: 10px solid;"> 
+       
+      <div style="left: 50%; top: 40%; position: absolute; width: 10px; height: 10px; background-color: black;  z-index: 999;"></div>
+      
+      <div class="row container-fluid">
+        <div class="col-lg-1"></div>
+       <div class="col-lg-7" style="background-color: green; border-radius: 100px; height: 50%; border: 10px solid;"> 
         <div style="margin-top: 50px; margin-bottom: 50px;">
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-1"> <br> <input class="largerCheckBox" type="checkbox" id="check-1"><p class="roboto-bold">HOLD</p> </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-2"> <br> <input class="largerCheckBox" type="checkbox" id="check-2"><p class="roboto-bold">HOLD</p>  </div>
@@ -22,18 +26,19 @@
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-4"><p class="roboto-bold">HOLD</p>  </div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-5"><p class="roboto-bold">HOLD</p></div>
           </div>
-        </div>
-
-        <div style="margin-top: 10px;">
-          <div class="">
-              <div class=""><button id="throwDice">Throw Dice</button></div>
-              <div class=""><p id="counter">3</p></div>
+          <div style="margin-top: 10px;">
+            <div class="">
+                <div class=""><button id="throwDice">Throw Dice</button></div>
+                <div class=""><p id="counter">3</p></div>
+            </div>
           </div>
         </div>
 
-        <div style="margin-top: 20px;">
+       
+
+        <div id="pointsDiv" class="col-lg-4">
             <div>
-            <table style="width: 30%; margin-left: auto; margin-right: auto; background-color: white; border-collapse: collapse;">
+            <table id="pointsTable" class="table-dice" style=" margin-left: auto; margin-right: auto; background-color: white; border-collapse: collapse;">
                 <tr>
                   <th></th>
                   <th>Player 1</th>
@@ -132,7 +137,10 @@
 
               </table>
             </div>
+
         </div>
+      </div>
+     
         <div id="test"></div>
     </main>
 
