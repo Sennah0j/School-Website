@@ -128,15 +128,15 @@ function finish(){
         if(document.getElementById('total').innerHTML > document.getElementById('total2').innerHTML){
             document.getElementById('test').innerHTML = ('play1 won');
         }
+        else if(document.getElementById('total').innerHTML == document.getElementById('total2').innerHTML){
+            document.getElementById('test').innerHTML = ('It is a tie');
+        }
         else{
             document.getElementById('test').innerHTML = ('play2 won');
         }
         turnsLeft =0;
         disableThrow();
        
-    }
-    else if(document.getElementById('total').innerHTML == document.getElementById('total2').innerHTML){
-        document.getElementById('test').innerHTML = ('It is a tie');
     }
     else{
         document.getElementById('test').innerHTML = ('');
