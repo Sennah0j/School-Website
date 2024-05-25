@@ -2,7 +2,11 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js";
 src
 document.getElementById('check-1');
 var trueFalseVisibilty = false;
-var turnsLeft = '3';
+var firstDone = false;
+var name1 = 'player1';
+var name2 = 'player2';
+var neutralName = '';
+var turnsLeft = '0';
 const dices = [2, 2, 2, 4, 4];
 var sortedDices = [];
 
@@ -16,18 +20,24 @@ const tempPlay2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var turn = 'player1';
 
 document.addEventListener('DOMContentLoaded', function(){
+    disableThrow();
     const nodeList = document.querySelectorAll(".play2ScoreButtons");
         for (let i = 0; i < nodeList.length; i++) {
             nodeList[i].disabled = true;
         }
+    const nodeList2 = document.querySelectorAll(".play1ScoreButtons");
+    for (let i = 0; i < nodeList2.length; i++) {
+        nodeList2[i].disabled = true;
+    }
     const checkList = document.querySelectorAll(".largerCheckBox");
         for(let i = 0; i < checkList.length; i++){
             checkList[i].disabled = true;
         }
-        document.getElementById('playerTurnText').innerHTML = turn + "'s turn";
+     
 });
 
 document.getElementById('throwDice').addEventListener('click',function(){
+    whichName();
     console.log('----------------');
     
     const checkList = document.querySelectorAll(".largerCheckBox");
@@ -84,8 +94,15 @@ document.getElementById('throwDice').addEventListener('click',function(){
         console.log('----------------');
                 
 });
-
-document.getElementById('tableButton').addEventListener('click', function(){showTable()});
+document.getElementById('inputDoneButton').addEventListener('click', function(){nameInputs()});
+document.getElementById('rulesButton').addEventListener('click', function(){
+    if(document.getElementById('rules').style.visibility == 'hidden'){
+        document.getElementById('rules').style.visibility = 'visible';
+    }
+    else{
+        document.getElementById('rules').style.visibility = 'hidden';
+    }
+});
 
 document.getElementById('ones').addEventListener('click', function(){saveNumbers(this.innerHTML, 1)});
 document.getElementById('twos').addEventListener('click', function(){saveNumbers(this.innerHTML, 2)});
@@ -119,21 +136,35 @@ document.getElementById('largeStraight2').addEventListener('click', function(){s
 document.getElementById('chance2').addEventListener('click', function(){saveNumbers(this.innerHTML, 14)});
 document.getElementById('yhatzee2').addEventListener('click', function(){saveNumbers(this.innerHTML, 15)});
 
-
-function showTable(){
-
-    if(trueFalseVisibilty == false){
-        document.getElementById('pointsDiv').style.visibility = 'visible';
-        document.getElementById('pointsDiv').style.display = 'block';
-        trueFalseVisibilty = true;
+function whichName(){
+    if(turn == 'player1'){
+        document.getElementById('playerTurnText').innerHTML = name1 + "'s turn";
+        console.log(name1 + ' first name');
     }
     else{
-        document.getElementById('pointsDiv').style.visibility = 'hidden';
-        document.getElementById('pointsDiv').style.display = 'none';
-        trueFalseVisibilty = false;
+        document.getElementById('playerTurnText').innerHTML = name2 + "'s turn";
+        console.log(name2 + ' first name');
     }
-    console.log('talbe trying to show');
+    document.getElementById('player1-table-name').innerHTML = name1;
+    document.getElementById('player2-table-name').innerHTML = name2;
+    if(firstDone == false){
+        turnsLeft =3;
+        disableThrow();
+        const nodeList2 = document.querySelectorAll(".play1ScoreButtons");
+        for (let i = 0; i < nodeList2.length; i++) {
+            nodeList2[i].disabled = false;
+        }
+        firstDone = true;
+    }
+    
+}
 
+function nameInputs(){
+    document.getElementById('inputDiv').style.visibility = 'hidden';
+    name1 = document.getElementById('player1-input').value;
+    name2 = document.getElementById('player2-input').value;
+    whichName();
+    
 }
 
 function finish(){
@@ -147,14 +178,17 @@ function finish(){
         }
     }
     if(temp25 == play2Check.length){
-        if(document.getElementById('total').innerHTML > document.getElementById('total2').innerHTML){
-            document.getElementById('test').innerHTML = ('play1 won');
+        if(parseInt(document.getElementById('total').innerHTML) > parseInt(document.getElementById('total2').innerHTML)){
+            document.getElementById('finishingDiv').innerHTML = ( name1 +' WON');
+            document.getElementById('finishingDiv').style.visibility = 'visible';
         }
-        else if(document.getElementById('total').innerHTML == document.getElementById('total2').innerHTML){
-            document.getElementById('test').innerHTML = ('It is a tie');
+        else if(parseInt(document.getElementById('total').innerHTML) == parseInt(document.getElementById('total2').innerHTML)){
+            document.getElementById('finishingDiv').innerHTML = 'it is a tie';
+            document.getElementById('finishingDiv').style.visibility = 'visible';
         }
         else{
-            document.getElementById('test').innerHTML = ('play2 won');
+            document.getElementById('finishingDiv').innerHTML = ( name2 +' WON');
+            document.getElementById('finishingDiv').style.visibility = 'visible';
         }
         turnsLeft =0;
         disableThrow();
@@ -213,7 +247,7 @@ function pairs(){
         }
         console.log(itemCounter(sortedDices, i) + ' one pairs checking' +i);
     }
-    for(temp20 > 0; temp20--;){
+    for(temp20-1 > 0; temp20--;){
         if(itemCounter(sortedDices, temp20) >= 2){
             console.log('testubg ' + itemCounter(sortedDices, temp20) + ' ' + temp20);
             twoPair = onePair +(temp20 * 2);
@@ -484,7 +518,7 @@ function saveNumbers(string, i){
         checkList[i].disabled = true;
         checkList[i].checked = false;
     }
-    document.getElementById('playerTurnText').innerHTML = turn + "'s turn";
+    whichName();
     sumUpEverything();
     finish();
 

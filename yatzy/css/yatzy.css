@@ -12,15 +12,18 @@
         float: right; 
         
     }
-    #pointsDiv{
-        
-        visibility: hidden;
-    }
     input.largerCheckBox{
         transform: scale(1.2);
         margin: auto;
     }
-   
+    .inputBox{
+        width: 50%;
+    }
+    .rulesDiv{
+        font-size: 15px;
+        width: 100%;
+    }
+
     
    
 }
@@ -38,13 +41,16 @@
         float: right; 
       
     }
-    #pointsDiv{
-        
-        visibility: hidden;
-    }
     input.largerCheckBox{
         transform: scale(1.5);
         margin: auto;
+    }
+    .inputBox{
+        width: 40%;
+    }
+    .rulesDiv{
+        font-size: 20px;
+        width: 80%;
     }
     
 }
@@ -64,14 +70,13 @@
         transform: scale(2);
         margin: auto;
     }
-    #pointsDiv{
-        
-        visibility: visible;
-    }
-    .table-button{
+    .rules-button{
         float: right; 
         height: auto; 
-        display: none;
+        
+    }
+    .inputBox{
+        width: 30%;
     }
 }
 @media (min-width:991px){
@@ -85,27 +90,55 @@
         transform: scale(2);
         margin: auto;
     }
-    #pointsDiv{
-    
-        visibility: visible;
-    }
     .table-dice{
         margin-top: 5%;
         width: 100%;
     }
-    .table-button{
+    .rules-button{
         float: right; 
         height: auto; 
-        display: none;
+    }
+    .inputBox{
+        width: 20%;
     }
 }
+.inputBox{
+    position: fixed;
+    top: 25%;
+    padding: 20px;
+}
+.centered {
+    background-color: #eee;
+    
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.rulesDiv{
+    
+    position: absolute;
+    overflow: auto;
+    border: 2px solid;
+    border-radius: 20px;
+    visibility: hidden; 
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 255, 255);  
+    z-index: 999;
 
-
+}
+.rules-button{
+    margin-top: 10px;
+    margin-right: 10px;
+}
 .diceDiv{
     display: inline-block;
 }
+.minWidth{
+    min-width: 100px;
+}
 th,td{
     border-bottom: 1px solid black;
+    
 }
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
