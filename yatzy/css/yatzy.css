@@ -8,8 +8,8 @@
     }
     .table-dice{
         margin-top: 5%;
-        width: 70%;
-        float: right; 
+        width: 100%;
+        
         
     }
     input.largerCheckBox{
@@ -37,8 +37,8 @@
     }
     .table-dice{
         margin-top: 5%;
-        width: 60%;
-        float: right; 
+        width: 100%;
+         
       
     }
     input.largerCheckBox{
@@ -65,6 +65,7 @@
     .table-dice{
         margin-top: 5%;
         width: 70%;
+  
     }
     input.largerCheckBox{
         transform: scale(2);
@@ -102,6 +103,11 @@
         width: 20%;
     }
 }
+.table-dice{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 .inputBox{
     position: fixed;
     top: 25%;
@@ -121,12 +127,17 @@
     border: 2px solid;
     border-radius: 20px;
     visibility: hidden; 
+    display: none;
     color: rgb(0, 0, 0); 
     background-color: rgb(255, 255, 255);  
     z-index: 999;
 
 }
 .rules-button{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -136,8 +147,10 @@
 .minWidth{
     min-width: 100px;
 }
+
 th,td{
     border-bottom: 1px solid black;
+    border-left: 1px solid black;
     
 }
 p{
@@ -145,22 +158,46 @@ p{
     margin: auto;
     font: bold;
 }
+
+#inputDoneButton{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: 40%;
+    border-radius: 5px;
+}
 .roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: black;
   }
 .play1ScoreButtons{
-    background-color: transparent;
+    background-color: rgb(207, 207, 207);
     border: none;
+    border-radius: 10px;
+    color: green;
+    font-weight: 700;
 }
 .play1ScoreButtons:hover{
     background-color: rgb(216, 216, 216);
     border-radius: 10px;
+   
+}
+.play1ScoreButtons:disabled{
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
 }
 .play2ScoreButtons{
-    background-color: transparent;
+    background-color: rgb(216, 216, 216);
     border: none;
+    color: green;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.play2ScoreButtons:disabled{
+    background-color: rgba(185, 185, 185, 0);
+    color: red;
 }
 .play2ScoreButtons:hover{
     background-color: rgb(216, 216, 216);

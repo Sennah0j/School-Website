@@ -7,6 +7,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
     <link rel="stylesheet" href="/yatzy/css/yatzy.css"> 
+    
  </head>
 
  <body style="background-color: rgb(189, 189, 189);">
@@ -15,11 +16,11 @@
       <h1 style="text-align: center;" id="playerTurnText">Player's turn</h1>
        
       <div id="inputDiv" class="centered inputBox" style="border-radius: 20px; background-color: rgb(19, 209, 92);  z-index: 999;">
-        <div style="">
-          <p style="text-align: center;">Player 1 Name</p>
-          <input style="width: 80%;" type="text" id="player1-input" ><br>
-          <p style="margin-top: 20px; text-align: center;">Player 2 Name</p>
-          <input style="width: 80%;" type="text" id="player2-input"><br>
+        <div >
+          <br><label for="player1-input" class="roboto-bold">Player 1 Name</label>
+          <input style="width: 80%;" type="text" id="player1-input" placeholder="Type Here" ><br>
+          <br><label for="player2-input" class="roboto-bold">Player 2 Name</label>
+          <input style="width: 80%;" type="text" id="player2-input" placeholder="Type Here"><br>
           <button style="margin-top: 10px;" id="inputDoneButton">Done</button>
         </div>
       </div>
@@ -34,12 +35,12 @@
         <br>
         Each player takes turns rolling the five dice. <br>
         A game consists of 13 rounds. <br>
-        Players use a scorecard to keep track of their points. <br>
+        Players uses the scorecard on the right to choose what points they want. <br>
         Gameplay: <br>
         Roll Dice: On your turn, you can roll the dice up to three times. <br>
         
         After the first roll, you can choose to keep any dice and re-roll the others. <br>
-        After the second roll, you can again choose to keep any dice and re-roll the others. <br>
+        After the second roll, you can again choose to keep any dice and re-roll the others by pressing the hold button under the dice. <br>
         After the third roll, you must use the dice to score. <br>
         Scoring: After rolling, choose one of the 13 categories to score your dice. Each category can only be used once per game. <br>
         
@@ -54,6 +55,7 @@
         Chance: Sum of all five dice, any combination. <br>
         Yatzy: 50 points for five of a kind. <br>
         Bonus: If the total score in the upper section is 63 or more, you get a bonus of 35 points. <br>
+        <b>Max:</b> This coloum show you the highest point you can get for every row.<br>
         
         End of Game: <br>
         After 13 rounds, the game ends. <br>
@@ -63,15 +65,16 @@
         Balance between securing safe scores and attempting risky high-value rolls. <br>
         Enjoy playing Yatzy!</div>
       </p>
-      <div class="row container-fluid">
-        <div class="col-lg-1"></div>
-       <div class="col-lg-7" style="background-color: green; border-radius: 100px; height: 50%; border: 10px solid;"> 
+      <div class="container-fluid">
+        <div class="row">
+        
+       <div class="col-lg-7 col-" style="background-color: green; border-radius: 100px; height: 50%; border: 10px solid;"> 
         <div style="margin-top: 50px; margin-bottom: 50px;">
-            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-1"> <br> <input class="largerCheckBox" type="checkbox" id="check-1"><p class="roboto-bold">HOLD</p></div>
-            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-2"> <br> <input class="largerCheckBox" type="checkbox" id="check-2"><p class="roboto-bold">HOLD</p></div>
-            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-3"> <br> <input class="largerCheckBox" type="checkbox" id="check-3"><p class="roboto-bold">HOLD</p></div>
-            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-4"><p class="roboto-bold">HOLD</p></div>
-            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice" class="dice" id="dice-4"> <br> <input class="largerCheckBox" type="checkbox" id="check-5"><p class="roboto-bold">HOLD</p></div>
+            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice1" class="dice" id="dice-1"> <br> <input class="largerCheckBox" alt="checkBox1" type="checkbox" id="check-1"><br><label for="check-1" class="roboto-bold">HOLD</label></div>
+            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice2" class="dice" id="dice-2"> <br> <input class="largerCheckBox" alt="checkBox2" type="checkbox" id="check-2"><br><label for="check-2" class="roboto-bold">HOLD</label></div>
+            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice3" class="dice" id="dice-3"> <br> <input class="largerCheckBox" alt="checkBox3" type="checkbox" id="check-3"><br><label for="check-3" class="roboto-bold">HOLD</label></div>
+            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice4" class="dice" id="dice-4"> <br> <input class="largerCheckBox" alt="checkBox4" type="checkbox" id="check-4"><br><label for="check-4" class="roboto-bold">HOLD</label></div>
+            <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice5" class="dice" id="dice-4"> <br> <input class="largerCheckBox" alt="checkBox5" type="checkbox" id="check-5"><br><label for="check-5" class="roboto-bold">HOLD</label></div>
           </div>
           <div style="margin-top: 10px;">
             <div class="">
@@ -83,9 +86,9 @@
 
        
 
-        <div id="pointsDiv" class="col-lg-4">
+        <div id="pointsDiv" class="col-lg-5">
             <div>
-            <table id="pointsTable" class="table-dice" style=" margin-left: auto; margin-right: auto; background-color: white; border-collapse: collapse;">
+            <table id="pointsTable" class="table-dice" style=" background-color: white; border-collapse: collapse;">
                 <tr>
                   <th></th>
                   <th class="minWidth" id="player1-table-name">Player 1</th>
@@ -96,37 +99,37 @@
                   <td>Ones</td>
                   <td class="minWidth"><button class="play1ScoreButtons" id="ones">0</button></td>
                   <td class="minWidth"><button class="play2ScoreButtons" id="ones2">0</button></td>
-                  <td>+5</td>
+                  <td>5</td>
                 </tr>
                 <tr>
                   <td>Twos</td>
                   <td class="minWidth"><button class="play1ScoreButtons"  id="twos">0</button></td>
                   <td class="minWidth"><button class="play2ScoreButtons"  id="twos2">0</button></td>
-                  <td>+10</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <td>Threes</td>
                   <td class="minWidth"><button class="play1ScoreButtons" id="threes">0</button></td>
                   <td class="minWidth"><button class="play2ScoreButtons" id="threes2">0</button></td>
-                  <td>+15</td>
+                  <td>15</td>
                 </tr>
                 <tr>
                   <td>Fours</td>
                   <td class="minWidth"><button class="play1ScoreButtons" id="fours">0</button></td>
                   <td class="minWidth"><button class="play2ScoreButtons" id="fours2">0</button></td>
-                  <td>+20</td>
+                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Fives</td>
                   <td><button class="play1ScoreButtons" id="fives">0</button></td>
                   <td><button class="play2ScoreButtons" id="fives2">0</button></td>
-                  <td>+25</td>
+                  <td>25</td>
                 </tr>
                 <tr>
                   <td>Sixes</td>
                   <td><button class="play1ScoreButtons" id="sixes">0</button></td>
                   <td><button class="play2ScoreButtons" id="sixes2">0</button></td>
-                  <td>+30</td>
+                  <td>30</td>
                 </tr>
                 <tr style="border: 2px solid;">
                   <td style="color: green;">Sum</td>
@@ -142,58 +145,58 @@
                   <td>One pair</td>
                   <td><button class="play1ScoreButtons" id="onePair">0</button></td>
                   <td><button class="play2ScoreButtons" id="onePair2">0</button></td>
-                  <td>+12</td>
+                  <td>12</td>
                 </tr>
                 <tr>
                   <td>Two pair</td>
                   <td><button class="play1ScoreButtons" id="twoPair">0</button></td>
                   <td><button class="play2ScoreButtons" id="twoPair2">0</button></td>
-                  <td>+22</td>
+                  <td>22</td>
                 </tr>
                 <tr>
                   <td>Three of a kind</td>
                   <td><button class="play1ScoreButtons" id="threeKind">0</button></td>
                   <td><button class="play2ScoreButtons" id="threeKind2">0</button></td>
-                  <td>+18</td>
+                  <td>18</td>
                 </tr>
                 <tr>
                   <td>Four of a kind</td>
                   <td><button class="play1ScoreButtons" id="fourKind">0</button></td>
                   <td><button class="play2ScoreButtons" id="fourKind2">0</button></td>
-                  <td>+24</td>
+                  <td>24</td>
                 </tr>
                 <tr>
                   <td>Full house</td>
                   <td><button class="play1ScoreButtons" id="fullHouse">0</button></td>
                   <td><button class="play2ScoreButtons" id="fullHouse2">0</button></td>
-                  <td>+28</td>
+                  <td>28</td>
                 </tr>
                 <tr>
                   <td>Small straight</td>
                   <td><button class="play1ScoreButtons" id="smallStraight">0</button></td>
                   <td><button class="play2ScoreButtons" id="smallStraight2">0</button></td>
-                  <td>+15</td>
+                  <td>15</td>
                 </tr>
                 <tr>
                   <td>Large Straight</td>
                   <td><button class="play1ScoreButtons" id="largeStraight">0</button></td>
                   <td><button class="play2ScoreButtons" id="largeStraight2">0</button></td>
-                  <td>+20</td>
+                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Chance</td>
                   <td><button class="play1ScoreButtons" id="chance">0</button></td>
                   <td><button class="play2ScoreButtons" id="chance2">0</button></td>
-                  <td>+30</td>
+                  <td>30</td>
                 </tr>
                 <tr>
                   <td>YATZY</td>
                   <td><button class="play1ScoreButtons" id="yhatzee">0</button></td>
                   <td><button class="play2ScoreButtons" id="yhatzee2">0</button></td>
-                  <td>+50</td>
+                  <td>50</td>
                 </tr>
                 <tr style="border: 3px solid;">
-                  <td style="color: red;">Total</td>
+                  <td style="color: rgb(161, 15, 15);">Total</td>
                   <td><p id="total">0</p></td>
                   <td><p id="total2">0</p></td>
                   <td>points</td>
@@ -203,6 +206,7 @@
             </div>
 
         </div>
+      </div>
       </div>
      
         <div id="test"></div>

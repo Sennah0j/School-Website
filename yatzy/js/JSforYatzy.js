@@ -98,9 +98,11 @@ document.getElementById('inputDoneButton').addEventListener('click', function(){
 document.getElementById('rulesButton').addEventListener('click', function(){
     if(document.getElementById('rules').style.visibility == 'hidden'){
         document.getElementById('rules').style.visibility = 'visible';
+        document.getElementById('rules').style.display = 'block';
     }
     else{
         document.getElementById('rules').style.visibility = 'hidden';
+        document.getElementById('rules').style.display = 'none';
     }
 });
 
@@ -476,11 +478,13 @@ function saveNumbers(string, i){
         const nodeList = document.querySelectorAll(".play1ScoreButtons");
         for (let i = 0; i < nodeList.length; i++) {
             nodeList[i].disabled = true;
+            
         }
         const nodeList2 = document.querySelectorAll(".play2ScoreButtons");
         for (let i = 0; i < nodeList2.length; i++) {
             if(play2Check[i] == false){
                 nodeList2[i].disabled = false;
+               
             }
            
         }
