@@ -63,7 +63,6 @@
         margin:20px 20px 10px 20px ;
     }
     .table-dice{
-        margin-top: 5%;
         width: 70%;
   
     }
@@ -79,6 +78,10 @@
     .inputBox{
         width: 30%;
     }
+    #pointsDiv{
+        margin-top: 5%;
+    }
+  
 }
 @media (min-width:991px){
     .dice {
@@ -102,6 +105,37 @@
     .inputBox{
         width: 20%;
     }
+    .diceTable{
+        margin-top: 10%;
+        
+    }
+    #pointsDiv{
+        margin-top: 5%;
+    
+    }
+
+}
+@media(min-width:1152px){
+    .minWidth{
+        min-width: 70px;
+    }
+}
+@media(min-width:1352px){
+    .minWidth{
+        min-width: 80px;
+    }
+}
+@media(min-width:1552px){
+    .minWidth{
+        min-width: 100px;
+    }
+}
+body{
+    background-color: rgb(189, 189, 189); 
+    background-image: url(/yatzy/imgs/grenBak.jpeg);   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    background-size: cover;
 }
 .table-dice{
     justify-content: center;
@@ -114,8 +148,7 @@
     padding: 20px;
 }
 .centered {
-    background-color: #eee;
-    
+   
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
@@ -144,9 +177,7 @@
 .diceDiv{
     display: inline-block;
 }
-.minWidth{
-    min-width: 100px;
-}
+
 
 th,td{
     border-bottom: 1px solid black;
@@ -158,7 +189,11 @@ p{
     margin: auto;
     font: bold;
 }
-
+#counter{
+    font-weight: 700; 
+    font-size: large; 
+    color: black;
+}
 #inputDoneButton{
     background-color: black;
     color: white;

@@ -10,17 +10,17 @@
     
  </head>
 
- <body style="background-color: rgb(189, 189, 189);">
+ <body>
     <main>
       <button id="rulesButton" class="rules-button" >rules</button>
-      <h1 style="text-align: center;" id="playerTurnText">Player's turn</h1>
+      <h1 style="text-align: center; color: white; " id="playerTurnText">Player's turn</h1>
        
       <div id="inputDiv" class="centered inputBox" style="border-radius: 20px; background-color: rgb(19, 209, 92);  z-index: 999;">
         <div >
           <br><label for="player1-input" class="roboto-bold">Player 1 Name</label>
-          <input style="width: 80%;" type="text" id="player1-input" placeholder="Type Here" ><br>
+          <input maxlength="15" style="width: 80%;" type="text" id="player1-input" placeholder="Type Here" ><br>
           <br><label for="player2-input" class="roboto-bold">Player 2 Name</label>
-          <input style="width: 80%;" type="text" id="player2-input" placeholder="Type Here"><br>
+          <input maxlength="15" style="width: 80%;" type="text" id="player2-input" placeholder="Type Here"><br>
           <button style="margin-top: 10px;" id="inputDoneButton">Done</button>
         </div>
       </div>
@@ -67,26 +67,26 @@
       </p>
       <div class="container-fluid">
         <div class="row">
-        
-       <div class="col-lg-7 col-" style="background-color: green; border-radius: 100px; height: 50%; border: 10px solid;"> 
-        <div style="margin-top: 50px; margin-bottom: 50px;">
+          <div class="col-3"></div>
+       <div class="col-lg-6 diceTable" style=" background-color: green; border-radius: 100px; height: 50%; border: 10px solid; "> 
+          <div style="margin-top: 50px; margin-bottom: 50px;">
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice1" class="dice" id="dice-1"> <br> <input class="largerCheckBox" alt="checkBox1" type="checkbox" id="check-1"><br><label for="check-1" class="roboto-bold">HOLD</label></div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice2" class="dice" id="dice-2"> <br> <input class="largerCheckBox" alt="checkBox2" type="checkbox" id="check-2"><br><label for="check-2" class="roboto-bold">HOLD</label></div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice3" class="dice" id="dice-3"> <br> <input class="largerCheckBox" alt="checkBox3" type="checkbox" id="check-3"><br><label for="check-3" class="roboto-bold">HOLD</label></div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice4" class="dice" id="dice-4"> <br> <input class="largerCheckBox" alt="checkBox4" type="checkbox" id="check-4"><br><label for="check-4" class="roboto-bold">HOLD</label></div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice5" class="dice" id="dice-4"> <br> <input class="largerCheckBox" alt="checkBox5" type="checkbox" id="check-5"><br><label for="check-5" class="roboto-bold">HOLD</label></div>
           </div>
-          <div style="margin-top: 10px;">
-            <div class="">
-                <div class=""><button id="throwDice">Throw Dice</button></div>
-                <div class=""><p id="counter">3</p></div>
-            </div>
-          </div>
+              <div class="" style="">
+                <div class="">
+                  <div class=""><p id="counter" style="">3</p></div>
+                  <div class="" style="margin-bottom: 10px;"><button id="throwDice">Throw Dice</button></div>
+                </div>
+              </div>
         </div>
 
        
 
-        <div id="pointsDiv" class="col-lg-5">
+        <div id="pointsDiv" class="col-lg-3">
             <div>
             <table id="pointsTable" class="table-dice" style=" background-color: white; border-collapse: collapse;">
                 <tr>
@@ -135,11 +135,13 @@
                   <td style="color: green;">Sum</td>
                   <td><p id="sum">0</p></td>
                   <td><p id="sum2">0</p></td>
+                  <td style="border-left: 1px solid;"></td>
                 </tr>
                 <tr style="border: 2px solid; ">
                   <td>Bonus</td>
                   <td><p id="bonus">0</p></td>
                   <td><p id="bonus2">0</p></td>
+                  <td style="border-left: 1px solid;"></td>
                 </tr>
                 <tr>
                   <td>One pair</td>
