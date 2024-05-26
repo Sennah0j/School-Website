@@ -177,7 +177,18 @@ body{
     display: inline-block;
 }
 
+.reloadButton{
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px solid;
+    font-weight: 700;
+    visibility: hidden;
+    display: block;
 
+}
+.reloadButton:hover{
+    background-color: rgb(110, 110, 110);
+}
 th,td{
     border-bottom: 1px solid black;
     border-left: 1px solid black;

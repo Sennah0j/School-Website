@@ -183,14 +183,17 @@ function finish(){
         if(parseInt(document.getElementById('total').innerHTML) > parseInt(document.getElementById('total2').innerHTML)){
             document.getElementById('finishingDiv').innerHTML = ( name1 +' WON');
             document.getElementById('finishingDiv').style.visibility = 'visible';
+           
         }
         else if(parseInt(document.getElementById('total').innerHTML) == parseInt(document.getElementById('total2').innerHTML)){
-            document.getElementById('finishingDiv').innerHTML = 'it is a tie';
+            document.getElementById('finishingDiv').innerHTML = 'IT IS A TIE';
             document.getElementById('finishingDiv').style.visibility = 'visible';
+           
         }
         else{
             document.getElementById('finishingDiv').innerHTML = ( name2 +' WON');
             document.getElementById('finishingDiv').style.visibility = 'visible';
+           
         }
         turnsLeft =0;
         disableThrow();
