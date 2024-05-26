@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+ <head>
+   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1.0, shrink-to-fit=no" >
+    <title>Task 1</title>
+    <!-- Bootstrap CSS min. files-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/bootstrap/css/new-btns.css"> 
+    <link rel="stylesheet" href="/bootstrap/css/home.css">
+    <link rel="stylesheet" href="/bootstrap/css/a-link.css">
+    <link rel="stylesheet" href="/js/css/colors.css">
+    <link rel="stylesheet" href="/js/css/buttons.css">
+    <style>
+     
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Comic+Neue:wght@700&display=swap');
+    </style>
+
+    
+ </head>
+ 
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <a class="navbar-brand" href="/newerHome.html">
+            <img src="/bootstrap/image/nobng-pic.png" alt="logo" style="width:50px;" class="img-fluid">
+          </a>
+          <nav class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav" >
+                <li class="nav-item dropdown">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://21joli.ssis.nu/wordpress/">  <button class="homeNavButton black" ><b>Wordpress</b></button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">  <button class="homeNavButton black" ><b>Documentation</b></button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tasks.html">  <button class="homeNavButton black" ><b>Tasks</b></button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/retired/homePageTest.html">  <button class="homeNavButton black" ><b>Retired</b></button></a>
+                </li>
+            </ul>
+          </nav>  
+       </div>
+     </nav>
+    </header>
+
+  <main style="color: white;" class="">
+
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-5"></div>
+            <div class="col-2">
+                <input type="text" id="input" placeholder="Skriv här" class="col-12" style="text-align: center;"> 
+                <div class="row">
+                    <div class="col-3"></div>
+                    <button type="button" id="matbtn" class="matabtn grey col-6">Mata in</button>
+                </div>
+                
+            </div>
+        </div>
+        <div>
+            <div class="col-4"></div>
+            <div class="col-4" style="border: white solid 2px; text-align: center; padding: 20px; margin: auto;" id="text-box"></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5"></div>
+                <button  style="margin-top:20px ; text-align: center;" type="button" id="summa" class="matabtn col-2">Summera</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="col-4"></div>
+            <div class="col-4" style="border: white solid 2px; text-align: center; padding: 20px; margin: auto; margin-top: 10px;" id="summan"></div>
+        </div>
+
+
+    </div>
+    
+    
+  </main>
+ 
+  <script>
+    var arrayen = [];
+    var arraynr = 0;
+    var summerarray = 0;
+
+    document.getElementById('matbtn').addEventListener('click', funktionett);
+    document.getElementById('summa').addEventListener('click', funktionen);
+
+    function funktionett (){
+        arrayen[arraynr] = parseFloat(document.getElementById('input').value);
+        document.getElementById('input').value = "";
+        document.getElementById('text-box').innerHTML = arrayen.join(" ");
+        summerarray += arrayen[arraynr];
+        arraynr = arraynr + 1;
+    }
+    function funktionen(){
+        document.getElementById('summan').innerHTML = "De " + arrayen.length + " talen summmeras och blir " + summerarray;
+    }
+  </script>
+ 
+
+</body>
+</html>

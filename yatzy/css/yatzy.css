@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@media (max-width:576px){
+    .dice {
+        height: 70px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 100%;
+        
+        
+    }
+    input.largerCheckBox{
+        transform: scale(1.2);
+        margin: auto;
+    }
+    .inputBox{
+        width: 50%;
+    }
+    .rulesDiv{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    
+   
+}
+@media (max-width:768px) and (min-width:576px){
+
+    .dice {
+        height: 80px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 100%;
+         
+      
+    }
+    input.largerCheckBox{
+        transform: scale(1.5);
+        margin: auto;
+    }
+    .inputBox{
+        width: 40%;
+    }
+    .rulesDiv{
+        font-size: 20px;
+        width: 80%;
+    }
+    
+}
+@media (max-width:992px) and (min-width:768px){
+
+    .dice {
+        height: 90px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    .table-dice{
+        width: 70%;
+  
+    }
+    input.largerCheckBox{
+        transform: scale(2);
+        margin: auto;
+    }
+    .rules-button{
+        float: right; 
+        height: auto; 
+        
+    }
+    .inputBox{
+        width: 30%;
+    }
+    #pointsDiv{
+        margin-top: 5%;
+    }
+  
+}
+@media (min-width:991px){
+    .dice {
+        height: 100px;
+        border-style: solid;
+        border-radius: 20px;
+        margin:20px 20px 10px 20px ;
+    }
+    input.largerCheckBox{
+        transform: scale(2);
+        margin: auto;
+    }
+    .table-dice{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .rules-button{
+        float: right; 
+        height: auto; 
+    }
+    .inputBox{
+        width: 20%;
+    }
+    .diceTable{
+        margin-top: 10%;
+        
+    }
+    #pointsDiv{
+        margin-top: 5%;
+    
+    }
+
+}
+@media(min-width:1152px){
+    .minWidth{
+        min-width: 70px;
+    }
+}
+@media(min-width:1352px){
+    .minWidth{
+        min-width: 80px;
+    }
+}
+@media(min-width:1552px){
+    .minWidth{
+        min-width: 100px;
+    }
+}
+body{
+    background-color: rgb(189, 189, 189); 
+    background-image: url(/yatzy/imgs/grenBak.jpeg);   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.table-dice{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inputBox{
+    position: fixed;
+    top: 25%;
+    padding: 20px;
+}
+.centered {
+   
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.rulesDiv{
+    
+    position: absolute;
+    overflow: auto;
+    border: 2px solid;
+    border-radius: 20px;
+    visibility: hidden; 
+    display: none;
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 255, 255);  
+    z-index: 999;
+
+}
+.rules-button{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.diceDiv{
+    display: inline-block;
+}
+
+
+th,td{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    font: bold;
+}
+#counter{
+    font-weight: 700; 
+    font-size: large; 
+    color: black;
+}
+#inputDoneButton{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: 40%;
+    border-radius: 5px;
+}
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+  }
+.play1ScoreButtons{
+    background-color: rgb(207, 207, 207);
+    border: none;
+    border-radius: 10px;
+    color: green;
+    font-weight: 700;
+}
+.play1ScoreButtons:hover{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+   
+}
+.play1ScoreButtons:disabled{
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+}
+.play2ScoreButtons{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    color: green;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.play2ScoreButtons:disabled{
+    background-color: rgba(185, 185, 185, 0);
+    color: red;
+}
+.play2ScoreButtons:hover{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+div{
+    text-align: center;
+}
+
+#throwDice {
+    background-color: rgb(222, 128, 5);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: center;
+    cursor:pointer;
+}
