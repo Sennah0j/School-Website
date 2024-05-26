@@ -346,7 +346,7 @@ function fullHouse(){
             break;
         }
     }
-    if(temp15 == 2){
+    if(temp15 >= 2){
         for(let i = 3; i < dices.length; i++){
             if(sortedDices[i] == sortedDices[i + 1]){
                 temp16++;
@@ -376,6 +376,14 @@ function fullHouse(){
             tempPlay2[10] = (sumHouse);
         }
     
+    }
+    else{
+        if(turn == 'player1' && play1Check[10] == false){
+            tempPlay1[10] = (0);
+        }
+        else if(play2Check[10] == false){
+            tempPlay2[10] = (0);
+        }
     }
     
     console.log(temp15 + ' t15');

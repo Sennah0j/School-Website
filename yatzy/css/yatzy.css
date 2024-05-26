@@ -171,8 +171,7 @@ body{
     color: white;
     text-transform: uppercase;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 10px;
+    float: right;
 }
 .diceDiv{
     display: inline-block;
