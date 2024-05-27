@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @media (max-width:576px){
     .dice {
-        height: 70px;
+        height: 90px;
         border-style: solid;
         border-radius: 20px;
         margin:20px 20px 10px 20px ;
@@ -13,7 +13,7 @@
         
     }
     input.largerCheckBox{
-        transform: scale(1.2);
+        transform: scale(1.6);
         margin: auto;
     }
     .inputBox{
@@ -106,7 +106,7 @@
         width: 20%;
     }
     .diceTable{
-        margin-top: 10%;
+        margin-top: 8%;
         
     }
     #pointsDiv{
