@@ -12,8 +12,9 @@
 
  <body>
     <main>
-      <button id="rulesButton" class="rules-button" >rules</button>
-      <h1 style="text-align: center; color: white; " id="playerTurnText">Player's turn</h1>
+        <button id="rulesButton" class="rules-button" >rules</button><br>
+        <h1></h1>
+ 
        
       <div id="inputDiv" class="centered inputBox" style="border-radius: 20px; background-color: rgb(19, 209, 92);  z-index: 999;">
         <div >
@@ -24,7 +25,7 @@
           <button style="margin-top: 10px;" id="inputDoneButton">Done</button>
         </div>
       </div>
-      <div id="finishingDiv" class="centered inputBox" style="visibility: hidden; color: white; background-color: rgb(0, 0, 0);  z-index: 998;"> </div>
+      <div id="finishingDiv" class="centered inputBox" style="visibility: hidden; color: white; background-color: rgb(61, 26, 26); font-weight: 700; font-size: 50px; border-radius: 5px; z-index: 998;"><br><button class="reloadButton" onclick="window.location.reload();">Play Again</button></div>
       <div id="rules" class="centered rulesDiv" style=" overflow-x: hidden;
       overflow-y: auto;">
         <p>
@@ -69,6 +70,7 @@
         <div class="row">
           <div class="col-3"></div>
        <div class="col-lg-6 diceTable" style=" background-color: green; border-radius: 100px; height: 50%; border: 10px solid; "> 
+        <h1 style=" text-align: center; color: white; " id="playerTurnText">Player's turn</h1>
           <div style="margin-top: 50px; margin-bottom: 50px;">
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice1" class="dice" id="dice-1"> <br> <input class="largerCheckBox" alt="checkBox1" type="checkbox" id="check-1"><br><label for="check-1" class="roboto-bold">HOLD</label></div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice2" class="dice" id="dice-2"> <br> <input class="largerCheckBox" alt="checkBox2" type="checkbox" id="check-2"><br><label for="check-2" class="roboto-bold">HOLD</label></div>
@@ -76,8 +78,8 @@
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice4" class="dice" id="dice-4"> <br> <input class="largerCheckBox" alt="checkBox4" type="checkbox" id="check-4"><br><label for="check-4" class="roboto-bold">HOLD</label></div>
             <div class="diceDiv"><img src="/js/img/dice-1.png" alt="Dice5" class="dice" id="dice-4"> <br> <input class="largerCheckBox" alt="checkBox5" type="checkbox" id="check-5"><br><label for="check-5" class="roboto-bold">HOLD</label></div>
           </div>
-              <div class="" style="">
-                <div class="">
+              <div>
+                <div>
                   <div class=""><p id="counter" style="">3</p></div>
                   <div class="" style="margin-bottom: 10px;"><button id="throwDice">Throw Dice</button></div>
                 </div>
